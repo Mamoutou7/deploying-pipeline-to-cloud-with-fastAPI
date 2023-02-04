@@ -1,0 +1,81 @@
+native-country
+	 United-States
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 ?
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Guatemala
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 India
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Philippines
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Mexico
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Puerto-Rico
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Germany
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Columbia
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Canada
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Italy
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Dominican-Republic
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Trinadad&Tobago
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 El-Salvador
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Vietnam
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Japan
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Ecuador
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 China
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Cuba
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Scotland
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Poland
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Jamaica
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Portugal
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Hong
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 France
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Iran
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Peru
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Outlying-US(Guam-USVI-etc)
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Haiti
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Taiwan
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Ireland
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 England
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 South
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Nicaragua
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Hungary
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Thailand
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Laos
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Cambodia
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Greece
+		 precision:1.0 recall:1.0 fbeta:1.0
+	 Honduras
+		 precision:1.0 recall:1.0 fbeta:1.0
