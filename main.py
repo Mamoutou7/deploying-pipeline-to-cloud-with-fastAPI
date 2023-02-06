@@ -58,7 +58,7 @@ async def welcome():
     return {"greeting": "Welcome to the census data prediction platform!"}
 
 # This allows sending of data (our DataSample) via POST to the API.
-@app.post("/predict/")
+@app.post("/predict")
 async def model_inference(data: DataSample):
 
     path_file = os.path.dirname(__file__)
