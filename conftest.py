@@ -15,7 +15,7 @@ def client():
 
 @pytest.fixture(scope="module")
 def path():
-    return "../starter/data/cleaned_census.csv"
+    return "starter/data/cleaned_census.csv"
 
 
 @pytest.fixture(scope="module")
@@ -23,7 +23,7 @@ def load_data():
     """
     Load the dataset
     """
-    path_data = "../starter/data/cleaned_census.csv"
+    path_data = "starter/data/cleaned_census.csv"
     return pd.read_csv(path_data)
 
 
@@ -53,7 +53,6 @@ def train_dataset(load_data, features):
                                     stratify=load_data['salary']
                                    )
 
-    print("AAAAAAAAA", train.shape)
     cat_features = [
         "workclass",
         "education",

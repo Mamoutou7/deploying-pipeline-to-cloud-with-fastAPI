@@ -51,7 +51,7 @@ def test_is_model():
     """
     Check saved model is present
     """
-    savepath = "../starter/model/model.joblib"
+    savepath = "starter/model/model.joblib"
     if os.path.isfile(savepath):
         try:
             _ = joblib.load(open(savepath, 'rb'))
@@ -86,7 +86,7 @@ def test_inference(train_dataset):
     """
     X_train, y_train = train_dataset
 
-    savepath = "../starter/model/model.joblib"
+    savepath = "starter/model/model.joblib"
     if os.path.isfile(savepath):
         model = joblib.load(open(savepath, 'rb'))
 
@@ -107,7 +107,7 @@ def test_compute_model_metrics(train_dataset):
     """
     X_train, y_train = train_dataset
 
-    savepath = "../starter/model/model.joblib"
+    savepath = "starter/model/model.joblib"
     if os.path.isfile(savepath):
         model = joblib.load(open(savepath, 'rb'))
         preds = inference(model, X_train)
