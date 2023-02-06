@@ -26,8 +26,8 @@ def test_api_locally_model_inference_x(client):
         "native_country": "India"
     }
     response = client.post(
-        "/predict/",
-        json=data_sample,
+        "/predict",
+        json=data_sample
     )
 
     assert response.status_code == 200
@@ -56,7 +56,7 @@ def test_api_locally_model_inference_y(client):
     }
 
     response = client.post(
-        "/predict/",
+        "/predict",
         json=data_sample,
     )
     assert response.status_code == 200
