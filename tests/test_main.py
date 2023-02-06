@@ -1,4 +1,4 @@
-from fastapi.testclient import TestClient
+from starlette.testclient import TestClient as TestClient
 from main import app
 import json
 
