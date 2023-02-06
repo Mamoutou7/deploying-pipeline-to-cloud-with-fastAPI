@@ -31,8 +31,8 @@ class DataSample(BaseModel):
     native_country: str
 
 
-    class MyConfig:
-        schema = {
+    class Config:
+        schema_extra = {
             "example" : {
                 "age": 38,
                 "workclass": "private",
@@ -48,7 +48,6 @@ class DataSample(BaseModel):
                 "capital_loss": 0,
                 "hours_per_week": 40,
                 "native_country": "United-States",
-
             }
         }
 
@@ -59,12 +58,12 @@ async def welcome():
     return {"greeting": "Welcome to the census data prediction platform!"}
 
 # This allows sending of data (our DataSample) via POST to the API.
-@app.post("/data/")
+@app.post("/predict/")
 async def model_inference(data: DataSample):
 
     path_file = os.path.dirname(__file__)
-    model = joblib.loads(os.path.join(path_file, "model/model.joblib"))
-    encoder = joblib.loads(os.path.join(path_file, "model/encoder.joblib"))
+    model = joblib.loads(os.path.join(path_file, "starter/model/model.joblib"))
+    encoder = joblib.loads(os.path.join(path_file, "starter/model/encoder.joblib"))
 
     # Replacing by the hyphen
     sample = {}
@@ -90,7 +89,8 @@ async def model_inference(data: DataSample):
 
     # Inference
     pred = model.predict(X)
+    result = "<=50K" if pred[0] == 0 else ">50K"
 
     # turn prediction into JSON
-    return {"prediction": "<=50K" if pred[0] == 0 else ">50K"}
+    return {"prediction": result}
 
