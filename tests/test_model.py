@@ -69,7 +69,7 @@ def test_is_fitted_model(train_dataset):
     """
 
     X_train, y_train = train_dataset
-    savepath = "../starter/model/model.joblib"
+    savepath = "starter/model/model.joblib"
     model = joblib.load(open(savepath, 'rb'))
 
     try:
