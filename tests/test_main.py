@@ -1,12 +1,18 @@
-# All tests
+from fastapi.testclient import TestClient
+from main import app
+import json
 
-def test_api_locally_get_root(client):
+# Instantiate the testing client with our app.
+client = TestClient(app)
+
+
+def test_api_locally_get_root():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"greeting" : "Welcome to the census data prediction platform!"}
 
 
-def test_api_locally_model_inference_x(client):
+def test_api_locally_model_inference_x():
     """
     Test for POST method for model Inference prediction with output ">50K"
     """
@@ -28,14 +34,14 @@ def test_api_locally_model_inference_x(client):
     }
     response = client.post(
         "/predict/",
-        json=data_sample,
+        data=json.dumps(data_sample),
     )
 
     assert response.status_code == 200
     assert response.json()["prediction"] == ">50K"
 
 
-def test_api_locally_model_inference_y(client):
+def test_api_locally_model_inference_y():
     """
      Test for POST method for model Inference prediction with output "<=50K"
      """
@@ -58,7 +64,7 @@ def test_api_locally_model_inference_y(client):
 
     response = client.post(
         "/predict/",
-        json=data_sample,
+        data=json.dumps(data_sample),
     )
     assert response.status_code == 200
     assert response.json()["prediction"] == "<=50K"
