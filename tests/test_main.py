@@ -1,5 +1,4 @@
-import json
-
+# All test
 def test_api_locally_get_root(client):
     response = client.get("/")
     assert response.status_code == 200
@@ -28,7 +27,7 @@ def test_api_locally_model_inference_x(client):
     }
     response = client.post(
         "/predict/",
-        data=json.dumps(data_sample),
+        json=data_sample,
     )
 
     assert response.status_code == 200
@@ -58,7 +57,7 @@ def test_api_locally_model_inference_y(client):
 
     response = client.post(
         "/predict/",
-        data=json.dumps(data_sample),
+        json=data_sample,
     )
     assert response.status_code == 200
     assert response.json()["prediction"] == "<=50K"
