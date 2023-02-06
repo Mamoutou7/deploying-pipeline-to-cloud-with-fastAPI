@@ -82,7 +82,7 @@ async def model_inference(data: DataSample):
         "native-country",
     ]
 
-    X_categorical = sample.values(cat_features)
+    X_categorical = sample[cat_features].values
     X_continuous = sample.drop(*[cat_features], axis=1)
     X_categorical = encoder.transform(X_categorical)
     X = np.concatenate([X_continuous, X_categorical], axis=1)
