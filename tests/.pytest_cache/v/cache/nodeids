@@ -1,0 +1,12 @@
+[
+  "test_local.py::test_api_locally_get_root",
+  "test_local.py::test_api_locally_model_inference_x",
+  "test_local.py::test_api_locally_model_inference_y",
+  "test_model.py::test_compute_model_metrics",
+  "test_model.py::test_features",
+  "test_model.py::test_import_data",
+  "test_model.py::test_inference",
+  "test_model.py::test_is_fitted_model",
+  "test_model.py::test_is_model",
+  "test_model.py::test_load_data"
+]

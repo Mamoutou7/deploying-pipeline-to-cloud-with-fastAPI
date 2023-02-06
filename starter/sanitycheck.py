@@ -15,7 +15,7 @@ def run_sanity_check(test_dir):
     #assert path.isdir(test_dir), FAIL_COLOR+f"No direcotry named {test_dir} found in {os.getcwd()}"
     print('This script will perform a sanity test to ensure your code meets the criteria in the rubric.\n')
     print('Please enter the path to the file that contains your test cases for the GET() and POST() methods')
-    print('The path should be something like tests/test_main.py')
+    print('The path should be something like tests/test_local.py')
     filepath = input('> ')
 
     assert path.exists(filepath), f"File {filepath} does not exist."

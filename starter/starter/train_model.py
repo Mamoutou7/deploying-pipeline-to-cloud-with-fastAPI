@@ -21,7 +21,10 @@ path_dir = os.path.dirname(__file__)
 data = pd.read_csv(os.path.join(path_dir, "../data/cleaned_census.csv"))
 
 # Optional enhancement, use K-fold cross validation instead of a train-test split.
-train, test = train_test_split(data, test_size=0.20)
+train, test = train_test_split( test_size=0.20,
+                                random_state=10,
+                                stratify=data['salary']
+                                )
 
 cat_features = [
     "workclass",
