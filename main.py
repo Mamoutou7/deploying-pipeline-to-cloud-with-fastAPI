@@ -79,7 +79,7 @@ async def model_inference(data: DataSample):
         "relationship",
         "race",
         "sex",
-        "native-country"
+        "native-country",
     ]
 
     X_categorical = sample.values(cat_features)
