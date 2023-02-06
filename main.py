@@ -62,8 +62,8 @@ async def welcome():
 async def model_inference(data: DataSample):
 
     path_file = os.path.dirname(__file__)
-    model = joblib.loads(os.path.join(path_file, "starter/model/model.joblib"))
-    encoder = joblib.loads(os.path.join(path_file, "starter/model/encoder.joblib"))
+    model = joblib.load(os.path.join(path_file, "starter/model/model.joblib"))
+    encoder = joblib.load(os.path.join(path_file, "starter/model/encoder.joblib"))
 
     # Replacing by the hyphen
     sample = {}
