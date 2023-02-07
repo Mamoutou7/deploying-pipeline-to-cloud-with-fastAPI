@@ -39,7 +39,7 @@ def slice_categorical_feature(test, cat_features, col_name, trained_model, encod
         precision, recall, fbeta = compute_model_metrics(y_test, preds)
 
         path_dir = os.path.dirname(__file__)
-        with open(os.path.join(path_dir, '../screenshots/slice_data_outputs.txt'), 'w') as file:
+        with open(os.path.join(path_dir, '../screenshots/slice_outputs.txt'), 'w') as file:
             file.write(f"{col_name}\n")
             for val in unique_values:
                 file.write(f"\t {val.strip()}\n")
