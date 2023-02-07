@@ -19,6 +19,20 @@ The project follows these steps:
 * See the screenshots as illustrations [here](https://github.com/Mamoutou7/deploying-pipeline-to-cloud-with-fastAPI/blob/main/starter/screenshots/continuous_deloyment.png)
 
 
+ # Environment and Set-up                                            
+ The project is conducted under macOS. Python 3.8 is used inside a virtual environment. Necessary packages are provided in the requirements.txt file also used for the Render deployment. A log file captured the training results and screenshots are provided to document the major achievements of the project.
+- inference FastAPI
+ ![](starter/screenshots/example.png)
+ 
+ - inference output from endpoint
+ ![](starter/screenshots/live_post.png)
+ 
+ - CI Github actions validation
+ ![](starter/screenshots/continuous_integration.png)
+   
+ - CD Render validation
+ ![](starter/screenshots/continuous_deployment_1.png)
+
 The initial project instructions are provided below for information. Refer to the repo content for the actual implementation.
 
 # INITIAL PROJECT INSTRUCTIONS

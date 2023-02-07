@@ -51,7 +51,6 @@ class DataSample(BaseModel):
             }
         }
 
-
 # GET on the root giving a welcome message
 @app.get("/")
 async def welcome():
